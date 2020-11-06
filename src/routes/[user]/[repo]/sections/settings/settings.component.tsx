@@ -1,12 +1,12 @@
 import { useEffect, useMemo } from 'react';
-import Divider from '@brix-ui/core/divider';
-import { H2 } from '@brix-ui/core/text';
 import { Cell } from '@brix-ui/grid';
 import useSingleSelection from '@brix-ui/hooks/use-single-selection';
 
 import type { EFC } from 'shared';
 
 import { Aside } from './aside';
+import { Features } from './features';
+import { Heading } from './heading';
 import { RepositoryName } from './repository-name';
 import { SocialPreview } from './social-preview';
 
@@ -44,13 +44,13 @@ export const Settings: EFC = () => {
       </Cell>
 
       <Cell size={9}>
-        <Divider redLine="0" margin="0" padding="0.5rem 1rem 0.5rem 0">
-          <H2>Settings</H2>
-        </Divider>
+        <Heading>Settings</Heading>
 
         <RepositoryName />
 
         <SocialPreview />
+
+        <Features />
       </Cell>
     </Styled.Settings>
   );

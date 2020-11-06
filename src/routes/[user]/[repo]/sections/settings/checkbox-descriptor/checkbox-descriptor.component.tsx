@@ -1,14 +1,15 @@
-import type { FC, ReactNode } from 'react';
+import type { FC } from 'react';
 import Checkbox from '@brix-ui/core/checkbox';
 import Flex from '@brix-ui/core/flex';
 
 import { Label } from '../label';
 
+import type { CheckboxDescriptorProps } from './checkbox-descriptor.props';
 import Styled from './checkbox-descriptor.styles';
 
-export const CheckboxDescriptor: FC<{ label: ReactNode }> = ({ children, label }) => {
+export const CheckboxDescriptor: FC<CheckboxDescriptorProps> = ({ children, label, ...props }) => {
   return (
-    <Flex direction="column" margin={{ left: '-4px' }}>
+    <Flex direction="column" margin={{ left: '-4px' }} {...props}>
       <Label verticalAlign="center" gap={{ horizontal: '4px' }}>
         <Checkbox />
 
