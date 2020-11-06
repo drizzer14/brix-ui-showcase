@@ -8,7 +8,7 @@ import Styled from './social-preview.styles';
 
 export const SocialPreview: EFC = () => {
   return (
-    <Flex as="article" direction="column" margin={{ top: '48px' }}>
+    <Flex as="article" direction="column" margin={{ top: '16px' }}>
       <Styled.Heading>Social preview</Styled.Heading>
 
       <Flex direction="column" gap={{ vertical: '8px' }} margin={{ bottom: '16px' }}>

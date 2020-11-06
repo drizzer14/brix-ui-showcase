@@ -5,8 +5,7 @@ import { P, Span } from '@brix-ui/core/text';
 import Button from '@brix-ui/core/button';
 
 import type { EFC } from 'shared';
-import { CheckboxDescriptor } from '../checkbox-descriptor';
-import { Label } from '../label';
+import { CheckboxDescriptor, Label } from '../shared';
 
 import Styled from './repository-name.styles';
 
@@ -15,7 +14,7 @@ export const RepositoryName: EFC = () => {
   const { repo } = query as { repo: string };
 
   return (
-    <Flex direction="column" margin={{ top: '16px' }} gap={{ vertical: '16px' }}>
+    <Flex direction="column" gap={{ vertical: '16px' }}>
       <Label direction="column" gap="8px">
         <P>Repository name</P>
 

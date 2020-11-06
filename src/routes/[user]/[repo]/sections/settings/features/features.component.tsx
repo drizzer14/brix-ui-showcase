@@ -1,22 +1,16 @@
 import Flex from '@brix-ui/core/flex';
-import { P, Span } from '@brix-ui/core/text';
 
 import type { EFC } from 'shared';
 
-import type { ActionSheetProps } from '../action-sheet';
-import { CheckboxDescriptor, CheckboxDescriptorProps } from '../checkbox-descriptor';
-
-import { Heading } from '../heading';
-
-import Styled from './features.styles';
+import { Heading, CheckboxList } from '../shared';
 
 export const Features: EFC = () => {
   return (
     <Flex direction="column" margin={{ top: '32px' }} gap={{ vertical: '16px' }}>
       <Heading>Features</Heading>
 
-      <Styled.List>
-        {([
+      <CheckboxList
+        descriptors={[
           {
             label: 'Wikis',
           },
@@ -62,29 +56,8 @@ export const Features: EFC = () => {
               </>
             ),
           },
-        ] as Array<
-          CheckboxDescriptorProps & {
-            actionSheet?: ActionSheetProps;
-          }
-        >).map(({ label, children, actionSheet }) => {
-          return (
-            <li key={label as string}>
-              <CheckboxDescriptor label={<P>{label}</P>}>{children}</CheckboxDescriptor>
-
-              {actionSheet && (
-                <Styled.ActionSheet
-                  {...actionSheet}
-                  button={
-                    <Styled.ActionButton>
-                      <Span lineHeightCompensation>{actionSheet.button}</Span>
-                    </Styled.ActionButton>
-                  }
-                />
-              )}
-            </li>
-          );
-        })}
-      </Styled.List>
+        ]}
+      />
     </Flex>
   );
 };

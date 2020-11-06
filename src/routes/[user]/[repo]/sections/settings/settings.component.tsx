@@ -1,12 +1,15 @@
+import Flex from '@brix-ui/core/flex';
 import { useEffect, useMemo } from 'react';
 import { Cell } from '@brix-ui/grid';
 import useSingleSelection from '@brix-ui/hooks/use-single-selection';
 
 import type { EFC } from 'shared';
 
+import { Heading } from './shared';
+
 import { Aside } from './aside';
+import { DataServices } from './data-services';
 import { Features } from './features';
-import { Heading } from './heading';
 import { RepositoryName } from './repository-name';
 import { SocialPreview } from './social-preview';
 
@@ -44,13 +47,19 @@ export const Settings: EFC = () => {
       </Cell>
 
       <Cell size={9}>
-        <Heading>Settings</Heading>
+        <Flex direction="column" gap={{ vertical: '32px' }}>
+          <Flex direction="column" gap={{ vertical: '16px' }}>
+            <Heading>Settings</Heading>
 
-        <RepositoryName />
+            <RepositoryName />
+          </Flex>
 
-        <SocialPreview />
+          <SocialPreview />
 
-        <Features />
+          <Features />
+
+          <DataServices />
+        </Flex>
       </Cell>
     </Styled.Settings>
   );
