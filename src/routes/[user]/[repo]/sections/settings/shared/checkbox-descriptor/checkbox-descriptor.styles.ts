@@ -8,7 +8,7 @@ const Caption = styled(Text).attrs(() => ({
 
   display: inline-block;
 
-  color: var(--c-faint-strong);
+  color: var(--c-faint-strong-up);
 
   a {
     color: var(--c-accent-strong);
