@@ -8,6 +8,7 @@ import type { EFC } from 'shared';
 
 import { Aside } from './aside';
 import { RepositoryName } from './repository-name';
+import { SocialPreview } from './social-preview';
 
 import Styled from './settings.styles';
 
@@ -48,6 +49,8 @@ export const Settings: EFC = () => {
         </Divider>
 
         <RepositoryName />
+
+        <SocialPreview />
       </Cell>
     </Styled.Settings>
   );
