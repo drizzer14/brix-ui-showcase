@@ -5,8 +5,10 @@ import { H1 } from '@brix-ui/core/text';
 
 import type { EFC } from 'shared';
 
-import { Actions } from './actions';
 import { Header } from './header';
+import { Actions } from './actions';
+
+import { Sections } from './sections';
 
 import Styled from './repo.styles';
 
@@ -20,7 +22,7 @@ const Repo: EFC = () => {
       <Header title={title} />
 
       <Styled.Main>
-        <Flex as="nav" horizontalAlign="space-between" padding="16px 32px">
+        <Flex as="header" horizontalAlign="space-between" padding="16px 32px">
           <Flex verticalAlign="center" gap={{ horizontal: '8px' }}>
             <Styled.Bookmark />
 
@@ -29,6 +31,11 @@ const Repo: EFC = () => {
 
           <Actions />
         </Flex>
+
+        <Sections
+          sections={['Code', 'Issues', 'Pull requests', 'Actions', 'Security', 'Insights', 'Settings']}
+          defaultSection="Settings"
+        />
       </Styled.Main>
     </>
   );

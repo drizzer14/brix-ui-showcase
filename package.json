@@ -7,8 +7,10 @@
   "dependencies": {
     "@brix-ui/core": "^2.0.0",
     "@brix-ui/grid": "^2.0.0",
+    "@brix-ui/hooks": "^2.0.0",
     "@brix-ui/theme": "^2.0.0",
     "@brix-ui/types": "^2.0.0",
+    "@brix-ui/utils": "^2.0.0",
     "@types/node": "^14.14.5",
     "@types/react-dom": "^16.9.9",
     "@types/styled-components": "^5.1.4",

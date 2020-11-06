@@ -10,6 +10,10 @@ const ButtonGroup = styled(Flex)`
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 
+    &:hover {
+      color: var(--c-base-strong-down);
+    }
+
     span {
       font-weight: 300;
     }
@@ -20,6 +24,10 @@ const ButtonGroup = styled(Flex)`
 
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+
+    &:hover {
+      color: var(--c-accent-strong);
+    }
   }
 `;
 
