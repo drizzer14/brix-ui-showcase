@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import useSingleSelection from '@brix-ui/hooks/use-single-selection';
 
-import { EFC } from 'shared';
+import type { EFC } from 'shared';
 
 import { Tabs } from './tabs';
 

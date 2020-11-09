@@ -7,11 +7,11 @@ import { Label } from '../label';
 import type { CheckboxDescriptorProps } from './checkbox-descriptor.props';
 import Styled from './checkbox-descriptor.styles';
 
-export const CheckboxDescriptor: FC<CheckboxDescriptorProps> = ({ children, label, ...props }) => {
+export const CheckboxDescriptor: FC<CheckboxDescriptorProps> = ({ children, label, checkboxProps, ...props }) => {
   return (
     <Flex direction="column" margin={{ left: '-4px' }} {...props}>
       <Label verticalAlign="center" gap={{ horizontal: '4px' }}>
-        <Checkbox />
+        <Checkbox {...checkboxProps} />
 
         {label}
       </Label>

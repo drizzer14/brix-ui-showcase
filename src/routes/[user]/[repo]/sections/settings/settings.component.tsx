@@ -4,7 +4,6 @@ import { Cell } from '@brix-ui/grid';
 import useSingleSelection from '@brix-ui/hooks/use-single-selection';
 
 import type { EFC } from 'shared';
-import { MergeButton } from './merge-button';
 
 import { Heading } from './shared';
 
@@ -13,6 +12,8 @@ import { DataServices } from './data-services';
 import { Features } from './features';
 import { RepositoryName } from './repository-name';
 import { SocialPreview } from './social-preview';
+import { GithubPages } from './github-pages';
+import { MergeButton } from './merge-button';
 
 import Styled from './settings.styles';
 
@@ -62,6 +63,8 @@ export const Settings: EFC = () => {
           <DataServices />
 
           <MergeButton />
+
+          <GithubPages />
         </Flex>
       </Cell>
     </Styled.Settings>

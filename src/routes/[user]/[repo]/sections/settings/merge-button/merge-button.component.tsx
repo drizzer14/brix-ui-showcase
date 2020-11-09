@@ -1,7 +1,7 @@
 import Flex from '@brix-ui/core/flex';
 import { P } from '@brix-ui/core/text';
 
-import { EFC } from 'shared';
+import type { EFC } from 'shared';
 import { CheckboxList } from '../shared/checkbox-list';
 
 import { Heading } from '../shared/heading';

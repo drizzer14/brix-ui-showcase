@@ -13,8 +13,8 @@ export const DataServices: EFC = () => {
     <Flex direction="column" gap={{ vertical: '16px' }}>
       <Heading>Data services</Heading>
 
-      <Alert intent="base">
-        <P>
+      <Alert intent="accent">
+        <P lineHeightCompensation>
           You can now manage Dependabot alerts and Dependabot security updates in the{' '}
           <Styled.Link type="button">Security & analysis settings</Styled.Link> page.
         </P>
