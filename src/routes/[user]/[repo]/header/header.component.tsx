@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 import type { EFC } from 'shared';
 
@@ -19,9 +20,9 @@ export const Header: EFC<HeaderProps> = ({ title }) => {
         <meta property="og:title" content={title} key="title" />
       </Head>
 
-      <a href={`https://github.com/${title.replace(/\s/g, '')}`} target="_blank" rel="noreferrer">
+      <Link href="/">
         <Styled.Logo />
-      </a>
+      </Link>
 
       <Search />
     </Styled.Header>
