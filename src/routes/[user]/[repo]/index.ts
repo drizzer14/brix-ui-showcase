@@ -1,1 +1,1 @@
-export { default } from './repo.component';
+export { default, getServerSideProps } from './repo.component';

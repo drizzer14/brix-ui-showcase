@@ -3,10 +3,11 @@ import { P } from '@brix-ui/core/text';
 import TextInput from '@brix-ui/core/text-input';
 
 import { EFC, Bold } from 'shared';
+import { ApiValue } from '../../../../api';
 
 import { useConfirm, ActionSheet, Confirm } from '../shared';
 
-export const Ownership: EFC = () => {
+export const Ownership: EFC<ApiValue> = () => {
   const [isConfirmOpen, setConfirmOpen] = useConfirm();
 
   return (

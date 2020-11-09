@@ -1,17 +1,15 @@
-import { useRouter } from 'next/router';
-
 import Flex from '@brix-ui/core/flex';
 import { P, Span } from '@brix-ui/core/text';
 import Button from '@brix-ui/core/button';
 
 import type { EFC } from 'shared';
+import { useApi } from '../../../api';
 import { CheckboxDescriptor, Label } from '../shared';
 
 import Styled from './repository-name.styles';
 
 export const RepositoryName: EFC = () => {
-  const { query } = useRouter();
-  const { repo } = query as { repo: string };
+  const { repo } = useApi();
 
   return (
     <Flex direction="column" gap={{ vertical: '16px' }}>

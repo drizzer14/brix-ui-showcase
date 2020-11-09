@@ -3,12 +3,13 @@ import RadioGroup, { RadioButton } from '@brix-ui/core/radio-group';
 import { P } from '@brix-ui/core/text';
 
 import type { EFC } from 'shared';
+import { ApiValue } from '../../../../api';
 
 import { ActionSheet, Confirm, useConfirm } from '../shared';
 
 import Styled from './visibility.styles';
 
-export const Visibility: EFC = () => {
+export const Visibility: EFC<ApiValue> = () => {
   const [isConfirmOpen, setConfirmOpen] = useConfirm();
   const title = 'Change repository visibility';
 

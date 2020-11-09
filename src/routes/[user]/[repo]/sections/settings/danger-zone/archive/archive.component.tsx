@@ -1,17 +1,14 @@
-import { useRouter } from 'next/router';
 import Flex from '@brix-ui/core/flex';
 import { P } from '@brix-ui/core/text';
 
 import { EFC, Bold } from 'shared';
+import { ApiValue } from '../../../../api';
 
 import { useConfirm, ActionSheet, Confirm } from '../shared';
 
-export const Archive: EFC = () => {
+export const Archive: EFC<ApiValue> = ({ user, repo }) => {
   const [isConfirmOpen, setConfirmOpen] = useConfirm();
   const title = 'Archive this repository';
-
-  const { query } = useRouter();
-  const { user, repo } = query as { user: string; repo: string };
 
   return (
     <>

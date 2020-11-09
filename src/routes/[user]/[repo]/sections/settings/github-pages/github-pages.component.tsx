@@ -1,11 +1,11 @@
 import Button from '@brix-ui/core/button';
 import { useMemo } from 'react';
-import { useRouter } from 'next/router';
 import Flex from '@brix-ui/core/flex';
 import { orUndefined } from '@brix-ui/utils/functions';
 import { P, Span } from '@brix-ui/core/text';
 
 import { EFC, Bold } from 'shared';
+import { useApi } from '../../../api';
 
 import { CheckboxDescriptor, Heading } from '../shared';
 
@@ -14,8 +14,7 @@ import { LearnMore } from './learn-more.component';
 
 export const GithubPages: EFC = () => {
   const isPublished = useMemo(() => orUndefined(Math.round(Math.random())), []);
-  const { query } = useRouter();
-  const { user, repo } = query as { user: string; repo: string };
+  const { user, repo } = useApi();
   const ghPagesLink = useMemo(() => (user ? `${user.toLowerCase()}.github.io` : ''), [user]);
 
   return (

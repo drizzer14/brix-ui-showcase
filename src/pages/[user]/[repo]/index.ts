@@ -1,1 +1,1 @@
-export { default } from 'routes/[user]/[repo]';
+export { default, getServerSideProps } from 'routes/[user]/[repo]';
