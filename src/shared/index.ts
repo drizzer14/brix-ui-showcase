@@ -1,1 +1,2 @@
-export * from './efc';
+export * from './efc.d';
+export * from './bold.component';

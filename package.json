@@ -5,6 +5,7 @@
     "build": "next build"
   },
   "dependencies": {
+    "@brix-ui/contexts": "^2.0.0",
     "@brix-ui/core": "^2.0.0",
     "@brix-ui/grid": "^2.0.0",
     "@brix-ui/hooks": "^2.0.0",

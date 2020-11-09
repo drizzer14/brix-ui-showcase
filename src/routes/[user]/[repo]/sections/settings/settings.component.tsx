@@ -14,6 +14,7 @@ import { RepositoryName } from './repository-name';
 import { SocialPreview } from './social-preview';
 import { GithubPages } from './github-pages';
 import { MergeButton } from './merge-button';
+import { DangerZone } from './danger-zone';
 
 import Styled from './settings.styles';
 
@@ -48,7 +49,7 @@ export const Settings: EFC = () => {
         <Aside links={links} select={dispatch.setValue} isLinkSelected={(link) => link === value} />
       </Cell>
 
-      <Cell size={9}>
+      <Cell size={7} offset={[0, 2]}>
         <Flex direction="column" gap={{ vertical: '32px' }}>
           <Flex direction="column" gap={{ vertical: '16px' }}>
             <Heading>Settings</Heading>
@@ -65,6 +66,8 @@ export const Settings: EFC = () => {
           <MergeButton />
 
           <GithubPages />
+
+          <DangerZone />
         </Flex>
       </Cell>
     </Styled.Settings>

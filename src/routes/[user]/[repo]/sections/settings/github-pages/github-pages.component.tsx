@@ -5,7 +5,7 @@ import Flex from '@brix-ui/core/flex';
 import { orUndefined } from '@brix-ui/utils/functions';
 import { P, Span } from '@brix-ui/core/text';
 
-import type { EFC } from 'shared';
+import { EFC, Bold } from 'shared';
 
 import { CheckboxDescriptor, Heading } from '../shared';
 
@@ -101,7 +101,7 @@ export const GithubPages: EFC = () => {
 
         <Styled.ListItem padding="16px">
           <CheckboxDescriptor
-            label={<Styled.Title>Enforce HTTPS</Styled.Title>}
+            label={<Bold as="strong">Enforce HTTPS</Bold>}
             checkboxProps={{
               defaultValue: true,
               isDisabled: true,

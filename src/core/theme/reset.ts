@@ -8,4 +8,13 @@ export const Reset = createGlobalStyle`
     flex-direction: column;
     flex-grow: 1;
   }
+  
+  a {
+    color: var(--c-accent-strong);
+    
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 `;
