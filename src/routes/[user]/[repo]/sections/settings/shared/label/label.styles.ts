@@ -6,6 +6,8 @@ const Label = styled(Flex).attrs(() => ({
 }))`
   p {
     font-weight: 700;
+
+    cursor: pointer;
   }
 `;
 
