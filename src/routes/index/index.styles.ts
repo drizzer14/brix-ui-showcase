@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import Flex, { FlexProps } from '@brix-ui/core/flex';
 
+import { ThemeSwitch as BaseThemeSwitch } from 'shared';
+
 const Main = styled(Flex).attrs<FlexProps>(() => ({
   forwardedAs: 'main',
   direction: 'column',
@@ -25,6 +27,12 @@ const Label = styled(Container).attrs(() => ({
   gap: { vertical: '4px' },
 }))``;
 
-const Styled = { Main, Container, Label };
+const ThemeSwitch = styled(BaseThemeSwitch)`
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+`;
+
+const Styled = { Main, Container, Label, ThemeSwitch };
 
 export default Styled;

@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Flex from '@brix-ui/core/flex';
 
-import type { EFC } from 'shared';
+import { EFC, ThemeSwitch } from 'shared';
 
 import Styled from './header.styles';
 
@@ -24,7 +25,11 @@ export const Header: EFC<HeaderProps> = ({ title }) => {
         <Styled.Logo />
       </Link>
 
-      <Search />
+      <Flex gap={{ horizontal: '8px' }} horizontalAlign="end">
+        <Search />
+
+        <ThemeSwitch />
+      </Flex>
     </Styled.Header>
   );
 };

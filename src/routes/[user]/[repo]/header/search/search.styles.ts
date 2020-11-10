@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Flex from '@brix-ui/core/flex';
 
 const Container = styled(Flex)`
-  width: 25%;
+  width: 320px;
 `;
 
 const Suffix = styled.span`

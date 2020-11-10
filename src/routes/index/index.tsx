@@ -37,6 +37,8 @@ const Index: EFC = () => {
           <Span>Go!</Span>
         </Button>
       </Styled.Container>
+
+      <Styled.ThemeSwitch />
     </Styled.Main>
   );
 };
