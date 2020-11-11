@@ -1,10 +1,11 @@
+import Text from '@brix-ui/core/text';
 import styled from 'styled-components';
 import Flex, { FlexProps } from '@brix-ui/core/flex';
 
 import { ThemeSwitch as BaseThemeSwitch } from 'shared';
 
-const Main = styled(Flex).attrs<FlexProps>(() => ({
-  forwardedAs: 'main',
+const Form = styled(Flex).attrs<FlexProps>(() => ({
+  forwardedAs: 'form',
   direction: 'column',
   align: 'center',
 }))`
@@ -24,8 +25,19 @@ const Container = styled(Flex).attrs<FlexProps>(() => ({
 
 const Label = styled(Container).attrs(() => ({
   forwardedAs: 'label',
-  gap: { vertical: '4px' },
-}))``;
+  verticalGap: '4px',
+}))`
+  position: relative;
+`;
+
+const Error = styled(Text).attrs(() => ({
+  forwardedAs: 'small',
+  color: 'critical-strong',
+}))`
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+`;
 
 const ThemeSwitch = styled(BaseThemeSwitch)`
   position: fixed;
@@ -33,6 +45,6 @@ const ThemeSwitch = styled(BaseThemeSwitch)`
   left: 1rem;
 `;
 
-const Styled = { Main, Container, Label, ThemeSwitch };
+const Styled = { Form, Container, Label, Error, ThemeSwitch };
 
 export default Styled;

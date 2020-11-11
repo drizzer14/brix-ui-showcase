@@ -1084,98 +1084,99 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@brix-ui/contexts@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@brix-ui/contexts/-/contexts-2.0.0.tgz#f1d10460978fcdb1f198f6167a326ba25f873582"
-  integrity sha512-FP1bjr2YkTEung9904BymSi/avASkHOJS+Q5s3RuUK9qYYyCGEtLTDqLxYN8EH4DAEVpcQjF1QOUX+L1RU1d1g==
+"@brix-ui/contexts@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@brix-ui/contexts/-/contexts-2.1.0.tgz#39a6bb61453852f34442618b863d22d9c0a19fee"
+  integrity sha512-Mzgm0ykhbd30sQuPoU8fOXhbGb75OHHVKmlN120xzun64j4oys+IUxV2rP0Nu0luviLmaSlQdKE9b5LGCnPBZw==
   dependencies:
-    "@brix-ui/hooks" "^2.0.0"
-    "@brix-ui/prop-types" "^2.0.0"
-    "@brix-ui/theme" "^2.0.0"
-    "@brix-ui/types" "^2.0.0"
-    "@brix-ui/utils" "^2.0.0"
+    "@brix-ui/hooks" "^2.1.0"
+    "@brix-ui/prop-types" "^2.1.0"
+    "@brix-ui/theme" "^2.1.0"
+    "@brix-ui/types" "^2.1.0"
+    "@brix-ui/utils" "^2.1.0"
     prop-types "^15.7.2"
 
-"@brix-ui/core@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@brix-ui/core/-/core-2.0.0.tgz#d0bffbe88774ef17a8e59da99df6874992f0b137"
-  integrity sha512-kL/fjW1DAK3YcJftGGf3GAVA3SAdXm0tD73rTkUXIkwpkIbbDtYsH5Rjm7DVoc9UmyFQhUuwsq1huNVrRhcokg==
+"@brix-ui/core@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@brix-ui/core/-/core-2.1.0.tgz#351c92ef832f6f4b38f1440719c0a99a2e95dca5"
+  integrity sha512-biF694yvDydY9Zx8OqhFOt9yy1JVJjtO/QpWLi5pZERLwU3ZN+qZ0fbtgnRdj+DGMiBtuqEnxDBBIjXXVd3XFw==
   dependencies:
-    "@brix-ui/contexts" "^2.0.0"
-    "@brix-ui/hooks" "^2.0.0"
-    "@brix-ui/icons" "^2.0.0"
-    "@brix-ui/prop-types" "^2.0.0"
-    "@brix-ui/theme" "^2.0.0"
-    "@brix-ui/types" "^2.0.0"
-    "@brix-ui/utils" "^2.0.0"
+    "@brix-ui/contexts" "^2.1.0"
+    "@brix-ui/hooks" "^2.1.0"
+    "@brix-ui/icons" "^2.1.0"
+    "@brix-ui/prop-types" "^2.1.0"
+    "@brix-ui/theme" "^2.1.0"
+    "@brix-ui/types" "^2.1.0"
+    "@brix-ui/utils" "^2.1.0"
     honks "^0.4.0"
     polished "^3.6.5"
     prop-types "^15.7.2"
     react-focus-lock "^2.4.1"
     use-callback-ref "^1.2.4"
 
-"@brix-ui/grid@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@brix-ui/grid/-/grid-2.0.0.tgz#eedf08a498634e4c9738e847ce05ab6a2ca6b7ad"
-  integrity sha512-1fPkPgEMC2z5aBLQxFclvM5xyJxDjz2F6ExV88XHLzoYjOyaDmwPsvMoQCyXtaNJirefwHZtvYGIoyAEQdEUUA==
+"@brix-ui/grid@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@brix-ui/grid/-/grid-2.1.0.tgz#c9644c93a0091aab4bfecbe1cc963c98201af490"
+  integrity sha512-3v49h6ahpEoKfcqqTHFr+M3ZOOBrGjy5NUadfH20skpvlEb7JQPAUdBaOLjXwo+44ygFSmlB9wYcmszfIW9MWw==
   dependencies:
-    "@brix-ui/contexts" "^2.0.0"
-    "@brix-ui/hooks" "^2.0.0"
-    "@brix-ui/prop-types" "^2.0.0"
-    "@brix-ui/theme" "^2.0.0"
-    "@brix-ui/types" "^2.0.0"
-    "@brix-ui/utils" "^2.0.0"
+    "@brix-ui/contexts" "^2.1.0"
+    "@brix-ui/core" "^2.1.0"
+    "@brix-ui/hooks" "^2.1.0"
+    "@brix-ui/prop-types" "^2.1.0"
+    "@brix-ui/theme" "^2.1.0"
+    "@brix-ui/types" "^2.1.0"
+    "@brix-ui/utils" "^2.1.0"
     prop-types "^15.7.2"
 
-"@brix-ui/hooks@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@brix-ui/hooks/-/hooks-2.0.0.tgz#fd980f40b3dafa25d301e749311801d75c088f4d"
-  integrity sha512-m3jpOzj4tJNT2MTt2Y0PhICdNdElHCYKxgbHbWxlKqDLQXwehEwmNs8FYDrCbypV4chehE/Ll+td03CS6WJaFw==
+"@brix-ui/hooks@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@brix-ui/hooks/-/hooks-2.1.0.tgz#15e9e0bec1c976626e4c533bf64b4e6de86b8b0b"
+  integrity sha512-+tmxvXDszV0INOng3Y7SdoF4XosZ5t+5nvJJsgPTolwvHDvylPN+xTftUNf9vGZ+lydfCXjU98sW/p+tMyTtTw==
   dependencies:
-    "@brix-ui/types" "^2.0.0"
-    "@brix-ui/utils" "^2.0.0"
+    "@brix-ui/types" "^2.1.0"
+    "@brix-ui/utils" "^2.1.0"
     honks "^0.4.0"
 
-"@brix-ui/icons@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@brix-ui/icons/-/icons-2.0.0.tgz#de32a4cf27c4aea051f393e975a716537d4453d5"
-  integrity sha512-unDT3hzc8LVvw8QHB1aXSAWlAA2HGSD/54o1xLeqv1AMgp1HrkFZXRPkzz97dtRMgVfnGrbs4qFN/tzcc8j06g==
+"@brix-ui/icons@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@brix-ui/icons/-/icons-2.1.0.tgz#6859693b474cb423fd7585050644a2924ba18f3a"
+  integrity sha512-dsljrk7wcf00ZL6AwdPsag75cPZotxTJp+ZVth6phD3lfyM2RCa921VL9yT5RjE54A3Y87fQj8j08NQ6lviz8Q==
   dependencies:
-    "@brix-ui/types" "^2.0.0"
-    "@brix-ui/utils" "^2.0.0"
+    "@brix-ui/types" "^2.1.0"
+    "@brix-ui/utils" "^2.1.0"
 
-"@brix-ui/prop-types@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@brix-ui/prop-types/-/prop-types-2.0.0.tgz#376785cc92372846f7fa1dfbd43b113edde839c9"
-  integrity sha512-CDS+MOKj5Z8mECGhIv4PhdNU+mIXmCRJ0n62fC1TperRdgj34zrch7ziJhjfnd5D8l091I6z9Uo64/EfXL9dPg==
+"@brix-ui/prop-types@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@brix-ui/prop-types/-/prop-types-2.1.0.tgz#5b76296deba4aa35783be0b51510676f1f9ba9fa"
+  integrity sha512-dMrvBiiJhZkMjJUWXarbObhtc5jBf1Q0dYJ9xE1+h6VwoHhmi9lseuoXdgXIty/+j2K+R7iqpakUsAs1Ti4nYA==
   dependencies:
-    "@brix-ui/types" "^2.0.0"
-    "@brix-ui/utils" "^2.0.0"
+    "@brix-ui/types" "^2.1.0"
+    "@brix-ui/utils" "^2.1.0"
     prop-types "^15.7.2"
 
-"@brix-ui/theme@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@brix-ui/theme/-/theme-2.0.0.tgz#87202a312de1d2e558b60f8226751a9a6c59d32c"
-  integrity sha512-MHVF2gMsd8NlSj10yK5YC1nBkSiAKlWc223WFigLuAfRUH74QFO0NEDWNeQZ/o9c+Pq1PhDSVbtTFyxGZiHKAQ==
+"@brix-ui/theme@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@brix-ui/theme/-/theme-2.1.0.tgz#5330754a2d882da1b19803493a116c7c21d9e517"
+  integrity sha512-0x7skNMXK/AGCxtWAtZqJEfenFChdsKHozMUknCwWmYPA+AeDBiHD61tQEWrpAbOnyLXL24Yqz8F+2CLQBj6xA==
   dependencies:
-    "@brix-ui/hooks" "^2.0.0"
-    "@brix-ui/prop-types" "^2.0.0"
-    "@brix-ui/types" "^2.0.0"
-    "@brix-ui/utils" "^2.0.0"
+    "@brix-ui/hooks" "^2.1.0"
+    "@brix-ui/prop-types" "^2.1.0"
+    "@brix-ui/types" "^2.1.0"
+    "@brix-ui/utils" "^2.1.0"
     lodash.merge "^4.6.2"
     polished "^3.6.6"
 
-"@brix-ui/types@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@brix-ui/types/-/types-2.0.0.tgz#7b7341c7b72322ad2725372e2b3161a3462bcfe5"
-  integrity sha512-32aL+RZ3IqgDRZoG9Kz+ucsUv9XGF3MjLTU1nKg1uqlOJCcPIURN2/DZIjnPLlbXRwrUVpDMvzyrB/HhR+qINg==
+"@brix-ui/types@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@brix-ui/types/-/types-2.1.0.tgz#e59f571f159c40fdc2bfb3543593f439ba96e6e0"
+  integrity sha512-F6R2BTNaxAtrs1pBvdWlrJvpRLJr2WuGJFaW0KyyWaNkc6dPLNmqqmQ1FeVsY0mfuD0oArH2K5a11B0Js/2xNQ==
 
-"@brix-ui/utils@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@brix-ui/utils/-/utils-2.0.0.tgz#69fb35cac8a3498862b52e8d19fbbc8f4325e1b9"
-  integrity sha512-K/kgeh3r3BVgQAXOMnHMgVgc4z0AYYmitMfT2/QppTfUzdBJKwiYM06hWI9AKNTznFBCv0slbkcd+zjtnhXGyg==
+"@brix-ui/utils@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@brix-ui/utils/-/utils-2.1.0.tgz#5f1ee609b3e0517a5f47d633197449d441d2d182"
+  integrity sha512-dPvU4kZkrY4m4QZr4PmxK4HmuurrbnCjhtxcgYI4DnPRuJAygdw/+Dvu3DpDK66n+mI4Dnm33d4LbqhYImqGZQ==
   dependencies:
-    "@brix-ui/types" "^2.0.0"
+    "@brix-ui/types" "^2.1.0"
 
 "@emotion/is-prop-valid@^0.8.8":
   version "0.8.8"
