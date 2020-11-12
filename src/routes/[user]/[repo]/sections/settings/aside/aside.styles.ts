@@ -19,6 +19,8 @@ const Link = styled(Button)`
   width: 100%;
   padding: 22px 16px;
 
+  justify-content: flex-start;
+
   border: 2px solid transparent;
 
   &:not(:disabled):hover {
