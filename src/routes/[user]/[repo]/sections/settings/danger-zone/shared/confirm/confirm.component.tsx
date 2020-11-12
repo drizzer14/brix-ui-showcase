@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import Modal from '@brix-ui/contexts/modal';
 import Dialog from '@brix-ui/core/dialog';
 import Divider from '@brix-ui/core/divider';
-import { P, Span } from '@brix-ui/core/text';
+import { P, Span, Strong } from '@brix-ui/core/text';
 import TextInput from '@brix-ui/core/text-input';
 import Flex from '@brix-ui/core/flex';
 
@@ -36,12 +36,12 @@ export const Confirm: FC<ConfirmProps> = ({ children, isOpen, close, title, aler
 
         <Divider margin="0" />
 
-        <Flex as="footer" direction="column" padding="16px" gap={{ vertical: '8px' }}>
+        <Flex as="footer" direction="column" padding="16px" verticalGap="8px">
           <P>
             Please type{' '}
-            <Styled.Bold>
+            <Strong>
               {user}/{repo}
-            </Styled.Bold>{' '}
+            </Strong>{' '}
             to confirm.
           </P>
 

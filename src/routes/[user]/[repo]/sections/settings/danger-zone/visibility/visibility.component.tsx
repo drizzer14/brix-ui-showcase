@@ -30,7 +30,7 @@ export const Visibility: EFC<ApiValue> = () => {
         close={setConfirmOpen}
       >
         <RadioGroup name="visibility" defaultValue="public">
-          <Flex direction="column" padding="16px" gap={{ vertical: '16px' }}>
+          <Flex direction="column" padding="16px" verticalGap="16px">
             {[
               {
                 visibility: 'public',
@@ -46,7 +46,7 @@ export const Visibility: EFC<ApiValue> = () => {
                   <RadioButton value={visibility} />
 
                   <Styled.Label>
-                    <P>Make {visibility}</P>
+                    <P weight={600}>Make {visibility}</P>
 
                     <P>{caption}</P>
                   </Styled.Label>

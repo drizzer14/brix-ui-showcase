@@ -8,7 +8,7 @@ import { Heading } from '../shared/heading';
 
 export const MergeButton: EFC = () => {
   return (
-    <Flex direction="column" gap={{ vertical: '16px' }}>
+    <Flex direction="column" verticalGap="16px">
       <Heading>Merge button</Heading>
 
       <P>

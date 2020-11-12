@@ -4,7 +4,7 @@ import Button from '@brix-ui/core/button';
 import Text, { Span } from '@brix-ui/core/text';
 import TextInput from '@brix-ui/core/text-input';
 
-import { EFC } from 'shared';
+import type { EFC } from 'shared';
 
 import { useForm, FormState } from './form';
 

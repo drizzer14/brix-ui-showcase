@@ -4,8 +4,6 @@ import { P } from '@brix-ui/core/text';
 
 const Heading = styled(P)`
   margin-bottom: 16px;
-
-  font-weight: 700;
 `;
 
 const TemplateButton = styled.button`
@@ -13,10 +11,6 @@ const TemplateButton = styled.button`
 
   &:hover {
     text-decoration: underline;
-  }
-
-  span {
-    font-weight: 700;
   }
 `;
 

@@ -22,7 +22,7 @@ const Repo: EFC<ApiValue> = ({ user, repo }) => {
 
       <Styled.Main>
         <Flex as="header" horizontalAlign="space-between" padding="16px 32px">
-          <Flex verticalAlign="center" gap={{ horizontal: '8px' }}>
+          <Flex verticalAlign="center" horizontalGap="8px">
             <Styled.Bookmark />
 
             <H1 variant="h2">{title}</H1>

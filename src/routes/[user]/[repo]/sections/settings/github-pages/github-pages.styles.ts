@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Flex from '@brix-ui/core/flex';
 import BrixAlert from '@brix-ui/core/alert';
 import BrixTextInput from '@brix-ui/core/text-input';
-import Text, { P } from '@brix-ui/core/text';
+import { P } from '@brix-ui/core/text';
 
 const List = styled(Flex).attrs(() => ({
   forwardedAs: 'ul',
@@ -32,35 +32,18 @@ const ListItem = styled(Flex).attrs(() => ({
   }
 `;
 
-const Link = styled.a`
-  color: var(--c-accent-strong);
-
-  cursor: pointer;
-
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
-`;
-
 const Alert = styled(BrixAlert)`
   width: 100%;
 `;
 
-const Title = styled(P)`
-  font-weight: 700;
-`;
-
-const Code = styled(Text).attrs(() => ({
-  forwardedAs: 'code',
-}))`
-  font-family: var(--f-code);
-`;
+const Title = styled(P).attrs(() => ({
+  weight: 700,
+}))``;
 
 const TextInput = styled(BrixTextInput)`
   width: 25%;
 `;
 
-const Styled = { List, ListItem, Link, Alert, Title, Code, TextInput };
+const Styled = { List, ListItem, Alert, Title, TextInput };
 
 export default Styled;

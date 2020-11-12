@@ -16,7 +16,7 @@ export const DangerZone: EFC = () => {
   const { user, repo } = useApi();
 
   return (
-    <Flex direction="column" gap={{ vertical: '16px' }}>
+    <Flex direction="column" verticalGap="16px">
       <Heading>Danger Zone</Heading>
 
       <Styled.List>

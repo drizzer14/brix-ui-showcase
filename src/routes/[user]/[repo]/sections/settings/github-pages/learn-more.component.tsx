@@ -1,13 +1,7 @@
-import type { EFC } from 'shared';
-
-import Styled from './github-pages.styles';
+import { EFC, Anchor } from 'shared';
 
 export const LearnMore: EFC<{
   href: string;
 }> = ({ href }) => {
-  return (
-    <Styled.Link as="a" href={href}>
-      Learn more
-    </Styled.Link>
-  );
+  return <Anchor href={href}>Learn more</Anchor>;
 };

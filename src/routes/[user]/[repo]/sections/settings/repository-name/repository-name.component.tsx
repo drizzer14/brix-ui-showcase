@@ -12,11 +12,11 @@ export const RepositoryName: EFC = () => {
   const { repo } = useApi();
 
   return (
-    <Flex direction="column" gap={{ vertical: '16px' }}>
+    <Flex direction="column" verticalGap="16px">
       <Label direction="column" gap="8px">
         <P>Repository name</P>
 
-        <Flex isInline gap={{ horizontal: '8px' }}>
+        <Flex isInline horizontalGap="8px">
           <Styled.Input isReadonly defaultValue={repo} />
 
           <Button appearance="faint">

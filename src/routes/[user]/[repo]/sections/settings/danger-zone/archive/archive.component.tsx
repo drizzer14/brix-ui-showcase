@@ -1,8 +1,8 @@
 import Flex from '@brix-ui/core/flex';
-import { P } from '@brix-ui/core/text';
+import { P, Strong } from '@brix-ui/core/text';
 
-import { EFC, Bold } from 'shared';
-import { ApiValue } from '../../../../api';
+import type { EFC } from 'shared';
+import type { ApiValue } from '../../../../api';
 
 import { useConfirm, ActionSheet, Confirm } from '../shared';
 
@@ -30,9 +30,9 @@ export const Archive: EFC<ApiValue> = ({ user, repo }) => {
           {[
             <>
               This will make the{' '}
-              <Bold as="strong">
+              <Strong>
                 {user}/{repo}
-              </Bold>{' '}
+              </Strong>{' '}
               repository, issues, pull requests, labels, milestones, projects, wiki, releases, commits, tags, branches,
               reactions and comments read-only and disable any future comments. The repository can still be forked.
             </>,

@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
-const Link = styled.button`
+const Anchor = styled.a`
   color: var(--c-accent-strong);
+  
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -9,6 +11,6 @@ const Link = styled.button`
   }
 `;
 
-const Styled = { Link };
+const Styled = { Anchor };
 
 export default Styled;

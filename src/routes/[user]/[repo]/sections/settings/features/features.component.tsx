@@ -6,7 +6,7 @@ import { Heading, CheckboxList } from '../shared';
 
 export const Features: EFC = () => {
   return (
-    <Flex direction="column" margin={{ top: '32px' }} gap={{ vertical: '16px' }}>
+    <Flex direction="column" margin={{ top: '32px' }} verticalGap="16px">
       <Heading>Features</Heading>
 
       <CheckboxList

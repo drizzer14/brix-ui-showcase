@@ -8,9 +8,9 @@ import Styled from './action-sheet.styles';
 
 export const ActionSheet: EFC<ActionSheetProps> = ({ title, description, button, className }) => {
   return (
-    <Styled.ActionSheet className={className} horizontalAlign="space-between" gap={{ horizontal: '32px' }}>
+    <Styled.ActionSheet className={className} horizontalAlign="space-between" horizontalGap="32px">
       <Flex direction="column">
-        <Styled.Title>{title}</Styled.Title>
+        <P weight={700}>{title}</P>
 
         <P>{description}</P>
       </Flex>

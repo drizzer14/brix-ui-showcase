@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Span } from '@brix-ui/core/text';
+import { Strong } from '@brix-ui/core/text';
 import { orUndefined } from '@brix-ui/utils/functions';
 
 import type { EFC } from 'shared';
@@ -19,7 +19,7 @@ export const Tab: EFC<TabProps> = ({ children: option, isSelected, register, sel
       data-selected={orUndefined(isSelected)}
       onClick={() => select(option)}
     >
-      <Span variant="p">{option}</Span>
+      <Strong>{option}</Strong>
     </Styled.Tab>
   );
 };

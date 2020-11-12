@@ -6,7 +6,7 @@ import { ButtonGroup } from './button-group';
 
 export const Actions: EFC = () => {
   return (
-    <Flex as="ul" gap={{ horizontal: '16px' }}>
+    <Flex as="ul" horizontalGap="16px">
       {['Watch', 'Star', 'Fork'].map((title) => {
         return <ButtonGroup key={title} title={title} count={Math.round(Math.random() * 100)} />;
       })}

@@ -2,7 +2,7 @@ import { P, Span } from '@brix-ui/core/text';
 
 import type { EFC } from 'shared';
 
-import { ActionSheetProps } from '../action-sheet';
+import type { ActionSheetProps } from '../action-sheet';
 import { CheckboxDescriptor, CheckboxDescriptorProps } from '../checkbox-descriptor';
 
 import Styled from './checkbox-list.styles';

@@ -3,7 +3,7 @@ import { Span } from '@brix-ui/core/text';
 
 import type { EFC } from 'shared';
 
-import { ActionSheetProps as BaseActionSheetProps } from '../../../shared';
+import type { ActionSheetProps as BaseActionSheetProps } from '../../../shared';
 
 import Styled from './action-sheet.styles';
 

@@ -1,9 +1,9 @@
 import Flex from '@brix-ui/core/flex';
-import { P } from '@brix-ui/core/text';
+import { P, Strong } from '@brix-ui/core/text';
 import TextInput from '@brix-ui/core/text-input';
 
-import { EFC, Bold } from 'shared';
-import { ApiValue } from '../../../../api';
+import type { EFC } from 'shared';
+import type { ApiValue } from '../../../../api';
 
 import { useConfirm, ActionSheet, Confirm } from '../shared';
 
@@ -34,12 +34,12 @@ export const Ownership: EFC<ApiValue> = () => {
         actionTitle="transfer this repository"
         close={setConfirmOpen}
       >
-        <Flex direction="column" padding="16px" gap={{ vertical: '8px' }}>
+        <Flex direction="column" padding="16px" verticalGap="8px">
           <P>Transferring may be delayed until the new owner approves the transfer.</P>
 
-          <Bold forwardedAs="label" htmlFor="name">
+          <Strong as="label" htmlFor="name">
             New owner’s GitHub username or organization name
-          </Bold>
+          </Strong>
 
           <TextInput id="name" placeholder="Username or organization name" />
         </Flex>

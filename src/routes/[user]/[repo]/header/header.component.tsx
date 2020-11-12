@@ -25,7 +25,7 @@ export const Header: EFC<HeaderProps> = ({ title }) => {
         <Styled.Logo />
       </Link>
 
-      <Flex gap={{ horizontal: '8px' }} horizontalAlign="end">
+      <Flex horizontalGap="8px" horizontalAlign="end">
         <Search />
 
         <ThemeSwitch />

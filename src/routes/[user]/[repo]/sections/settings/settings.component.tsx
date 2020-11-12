@@ -50,8 +50,8 @@ export const Settings: EFC = () => {
       </Cell>
 
       <Cell size={7} offset={[0, 2]}>
-        <Flex direction="column" gap={{ vertical: '32px' }}>
-          <Flex direction="column" gap={{ vertical: '16px' }}>
+        <Flex direction="column" verticalGap="32px">
+          <Flex direction="column" verticalGap="16px">
             <Heading>Settings</Heading>
 
             <RepositoryName />

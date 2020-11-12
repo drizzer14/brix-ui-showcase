@@ -2,9 +2,9 @@ import Button from '@brix-ui/core/button';
 import { useMemo } from 'react';
 import Flex from '@brix-ui/core/flex';
 import { orUndefined } from '@brix-ui/utils/functions';
-import { P, Span } from '@brix-ui/core/text';
+import { P, Span, Strong, Code } from '@brix-ui/core/text';
 
-import { EFC, Bold } from 'shared';
+import { EFC, Anchor } from 'shared';
 import { useApi } from '../../../api';
 
 import { CheckboxDescriptor, Heading } from '../shared';
@@ -18,7 +18,7 @@ export const GithubPages: EFC = () => {
   const ghPagesLink = useMemo(() => (user ? `${user.toLowerCase()}.github.io` : ''), [user]);
 
   return (
-    <Flex direction="column" gap={{ vertical: '16px' }}>
+    <Flex direction="column" verticalGap="16px">
       <Heading>GitHub Pages</Heading>
 
       <Styled.List data-published={isPublished}>
@@ -27,24 +27,24 @@ export const GithubPages: EFC = () => {
             <Styled.Alert intent="success">
               <P lineHeightCompensation>
                 Your site is published at{' '}
-                <Styled.Link>
+                <Anchor as="button">
                   https://{ghPagesLink}/{repo}/
-                </Styled.Link>
+                </Anchor>
               </P>
             </Styled.Alert>
           </Styled.ListItem>
         )}
 
-        <Styled.ListItem padding="16px" gap={{ vertical: '32px' }}>
+        <Styled.ListItem padding="16px" verticalGap="32px">
           <Flex direction="column">
             <Styled.Title>Source</Styled.Title>
 
             <P>
-              Your GitHub Pages site is currently being built from the <Styled.Code>gh-pages</Styled.Code> branch.{' '}
+              Your GitHub Pages site is currently being built from the <Code>gh-pages</Code> branch.{' '}
               <LearnMore href="https://docs.github.com/articles/configuring-a-publishing-source-for-github-pages/" />.
             </P>
 
-            <Flex gap={{ horizontal: '8px' }} margin={{ top: '8px' }}>
+            <Flex horizontalGap="8px" margin={{ top: '8px' }}>
               <Button appearance="faint">
                 <Span lineHeightCompensation>
                   <Span color="var(--c-faint-strong)">Branch:</Span> gh-pages
@@ -70,7 +70,7 @@ export const GithubPages: EFC = () => {
               .
             </P>
 
-            <Flex gap={{ horizontal: '8px' }} margin={{ top: '8px' }}>
+            <Flex horizontalGap="8px" margin={{ top: '8px' }}>
               <Button appearance="faint">
                 <Span lineHeightCompensation>Choose a theme</Span>
               </Button>
@@ -83,13 +83,12 @@ export const GithubPages: EFC = () => {
             <Styled.Title>Custom domain</Styled.Title>
 
             <P>
-              Custom domains allow you to serve your site from a domain other than{' '}
-              <Styled.Code>{ghPagesLink}</Styled.Code>.{' '}
+              Custom domains allow you to serve your site from a domain other than <Code>{ghPagesLink}</Code>.{' '}
               <LearnMore href="https://docs.github.com/articles/using-a-custom-domain-with-github-pages/" />
             </P>
           </Flex>
 
-          <Flex gap={{ horizontal: '8px' }} margin={{ top: '8px' }}>
+          <Flex horizontalGap="8px" margin={{ top: '8px' }}>
             <Styled.TextInput isReadonly />
 
             <Button appearance="faint" isDisabled>
@@ -100,13 +99,13 @@ export const GithubPages: EFC = () => {
 
         <Styled.ListItem padding="16px">
           <CheckboxDescriptor
-            label={<Bold as="strong">Enforce HTTPS</Bold>}
+            label={<Strong>Enforce HTTPS</Strong>}
             checkboxProps={{
               defaultValue: true,
               isDisabled: true,
             }}
           >
-            <Flex direction="column" gap={{ vertical: '16px' }}>
+            <Flex direction="column" verticalGap="16px">
               <span>
                 — Required for your site because you are using the default domain (<code>{ghPagesLink}</code>)
               </span>

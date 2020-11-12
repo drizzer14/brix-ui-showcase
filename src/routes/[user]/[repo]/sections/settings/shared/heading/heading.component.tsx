@@ -5,7 +5,7 @@ import Styled from './heading.styles';
 
 export const Heading: FC = ({ children }) => {
   return (
-    <Divider redLine="0" margin="0" padding="0.5rem 1rem 0.5rem 0">
+    <Divider redLine="0" margin="0" padding={{ vertical: '0.5rem', right: '1rem', left: '0' }}>
       <Styled.Heading>{children}</Styled.Heading>
     </Divider>
   );

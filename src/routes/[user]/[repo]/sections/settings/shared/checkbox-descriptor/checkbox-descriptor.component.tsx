@@ -10,7 +10,7 @@ import Styled from './checkbox-descriptor.styles';
 export const CheckboxDescriptor: FC<CheckboxDescriptorProps> = ({ children, label, checkboxProps, ...props }) => {
   return (
     <Flex direction="column" margin={{ left: '-4px' }} {...props}>
-      <Label verticalAlign="center" gap={{ horizontal: '4px' }}>
+      <Label verticalAlign="center" horizontalGap="4px">
         <Checkbox {...checkboxProps} />
 
         {label}

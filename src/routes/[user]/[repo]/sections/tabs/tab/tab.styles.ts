@@ -18,10 +18,6 @@ const Tab = styled(Button)`
 
   &[data-selected] {
     border-bottom-color: var(--c-accent-strong);
-
-    span {
-      font-weight: 700;
-    }
   }
 `;
 
