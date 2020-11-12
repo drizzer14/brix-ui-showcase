@@ -16,8 +16,15 @@ const Index: EFC = () => {
 
   const { push } = useRouter();
 
-  const setValue = useCallback(
+  const handleChange = useCallback(
     (name: string) => (value: string | undefined) => {
+      dispatch({
+        type: 'set-error',
+        payload: {
+          name,
+        },
+      });
+
       dispatch({
         type: 'set-value',
         payload: {
@@ -29,17 +36,27 @@ const Index: EFC = () => {
     []
   );
 
-  const handleSubmit = useCallback<FormEventHandler>(
+  const handleSubmit = useCallback<FormEventHandler<HTMLFormElement>>(
     (event) => {
       event.preventDefault();
 
-      push(`/${owner}/${repo}`);
+      push(`/${owner.value}/${repo.value}`);
     },
-    [push, owner, repo]
+    [push, owner.value, repo.value]
   );
 
+  const handleInvalid = useCallback<FormEventHandler<HTMLInputElement>>((event) => {
+    dispatch({
+      type: 'set-error',
+      payload: {
+        name: (event.target as HTMLInputElement).name,
+        message: 'This field is required',
+      },
+    });
+  }, []);
+
   return (
-    <Styled.Form verticalGap="32px" padding="32px" onSubmit={handleSubmit}>
+    <Styled.Form verticalGap="32px" padding="32px" onSubmit={handleSubmit} onInvalid={handleInvalid}>
       {(Object.keys(state) as Array<keyof typeof state>).map((name) => {
         const { value, error } = state[name];
 
@@ -49,7 +66,7 @@ const Index: EFC = () => {
               {`${name[0].toUpperCase()}${name.slice(1)}*`}
             </Text>
 
-            <TextInput name={name} isRequired value={value} onChange={setValue(name)} />
+            <TextInput name={name} isRequired value={value} onChange={handleChange(name)} />
 
             {error && <Styled.Error>{error}</Styled.Error>}
           </Styled.Label>

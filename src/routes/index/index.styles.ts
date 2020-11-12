@@ -25,9 +25,12 @@ const Container = styled(Flex).attrs<FlexProps>(() => ({
 
 const Label = styled(Container).attrs(() => ({
   forwardedAs: 'label',
-  verticalGap: '4px',
 }))`
   position: relative;
+
+  p {
+    margin-bottom: 4px;
+  }
 `;
 
 const Error = styled(Text).attrs(() => ({
@@ -35,7 +38,7 @@ const Error = styled(Text).attrs(() => ({
   color: 'critical-strong',
 }))`
   position: absolute;
-  bottom: 8px;
+  bottom: -18px;
   left: 0;
 `;
 

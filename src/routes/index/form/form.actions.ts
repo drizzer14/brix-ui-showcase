@@ -12,6 +12,6 @@ export interface SetError {
   type: 'set-error';
   payload: {
     name: string;
-    message: string;
+    message?: string;
   };
 }
