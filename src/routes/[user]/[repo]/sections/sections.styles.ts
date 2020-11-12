@@ -8,8 +8,8 @@ export const Section = styled(Flex).attrs(() => ({
 
   flex-grow: 1;
 
-  background-color: var(--c-base-weak-up);
-  border-top: 1px solid var(--c-base-weak-down);
+  background-color: var(--c-faint-weak-down);
+  border-top: 1px solid var(--c-faint-weak);
 `;
 
 const Styled = { Section };

@@ -8,7 +8,7 @@ import { Github } from './github';
 const Header = styled(Flex).attrs(() => ({
   forwardedAs: 'header',
 }))`
-  --input-background-color: var(--c-base-weak-up);
+  --input-background-color: var(--c-faint-weak-down);
 
   height: 62px;
   width: 100%;
@@ -16,7 +16,7 @@ const Header = styled(Flex).attrs(() => ({
   padding: 16px 32px;
 
   color: var(--c-base-strong);
-  background-color: var(--c-base-weak-up);
+  background-color: var(--c-faint-weak-down);
 `;
 
 const Logo = styled(Github)`
