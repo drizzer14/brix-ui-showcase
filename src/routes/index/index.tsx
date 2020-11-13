@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Button from '@brix-ui/core/button';
 import Text, { Span } from '@brix-ui/core/text';
 import TextInput from '@brix-ui/core/text-input';
+import { orUndefined } from '@brix-ui/utils/functions';
 
 import type { EFC } from 'shared';
 
@@ -66,7 +67,13 @@ const Index: EFC = () => {
               {`${name[0].toUpperCase()}${name.slice(1)}*`}
             </Text>
 
-            <TextInput name={name} isRequired value={value} onChange={handleChange(name)} />
+            <TextInput
+              name={name}
+              isRequired
+              isInvalid={orUndefined(state[name].error)}
+              value={value}
+              onChange={handleChange(name)}
+            />
 
             {error && <Styled.Error>{error}</Styled.Error>}
           </Styled.Label>
